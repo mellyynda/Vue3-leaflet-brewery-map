@@ -1,6 +1,11 @@
 <template>
   <ul>
-    <li v-for="brewery in brewerys" :key="brewery.id">{{brewery.name}}, {{ brewery.state }}</li>
+    <li 
+    v-for="brewery in brewerys" 
+    :key="brewery.id">
+      {{brewery.name}}, 
+      <span class="state">{{ brewery.state }}</span>
+    </li>
   </ul>
 </template>
 
